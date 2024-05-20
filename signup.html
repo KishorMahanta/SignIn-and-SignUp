@@ -1,0 +1,50 @@
+<!-- sign-up.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="signup.js"></script>
+  <style>
+    body {
+      background-image: url(b.jpg); 
+      color: rgb(212, 214, 215);
+    }
+    #SignUp {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto my-4">
+    <h1 id="SignUp" class="text-4xl center- font-bold mb-4">Sign Up</h1>
+    <form id="signUpForm" class="max-w-md mx-auto">
+      <div class="mb-4">
+        <label for="name" class="block font-bold mb-2">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block font-bold mb-2">E-mail</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-4">
+        <label for="phone" class="block font-bold mb-2">Phone Number</label>
+        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block font-bold mb-2">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+      <div class="mb-4">
+        <label for="confirmPassword" class="block font-bold mb-2">Confirm Password</label>
+        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+  </div>
+
+</body>
+</html>
